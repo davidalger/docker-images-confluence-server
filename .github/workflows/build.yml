@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        version: [6.15, 7.0, latest]
+        version: ["6.15", "7.0", "latest"]
     steps:
     - uses: actions/checkout@v1
     - run: ./scripts/build.sh --push
